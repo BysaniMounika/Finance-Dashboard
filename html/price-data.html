@@ -1,0 +1,54 @@
+<div class="btn-group">
+    <div class="dropdown float-left">
+        <button type="button" id="exchange-button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Select Exchange
+        </button>
+        <div id="exchange-dropdown" class="dropdown-menu">
+        </div>
+    </div>
+    <div class="dropdown float-right">
+        <button type="button" id="companies-button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Select Company
+        </button>
+        <div id="company-dropdown" class="dropdown-menu">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<input type="text" name="dates" class="form-control pull-right" id="date-range">
+<br/>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#display-chart">Chart</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#display-table">Table</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="display-chart" class="container tab-pane active"><br>
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+    <div id="display-table" class="container tab-pane fade"><br>
+        <div class="table-responsive table-justified">
+            <table class="table table-hover ">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Close</th>
+                    <th>Volume</th>
+                </tr>
+                </thead>
+                <tbody id="tbody-price-tab">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

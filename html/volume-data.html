@@ -1,0 +1,43 @@
+<div class="btn-group">
+    <div class="dropdown float-left">
+        <button type="button" id="exchange-button-volume-tab" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Select Exchange
+        </button>
+        <div id="exchange-dropdown-volume-tab" class="dropdown-menu">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<input type="text" name="dates" class="form-control pull-right" id="single-date">
+<br/>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#display-chart-volume-tab">Chart</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#display-table-volume-tab">Table</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="display-chart-volume-tab" class="container tab-pane active"><br>
+        <div>
+            <canvas id="chart-volume"></canvas>
+        </div>
+    </div>
+    <div id="display-table-volume-tab" class="container tab-pane fade"><br>
+        <div class="table-responsive table-justified">
+            <table class="table table-hover ">
+                <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Volume</th>
+                </tr>
+                </thead>
+                <tbody id="tbody-volume-tab">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
